@@ -1,0 +1,57 @@
+﻿<Window x:Class="Session3.Window4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Session3"
+        mc:Ignorable="d"
+        Title="Разговор" Height="460" Width="620">
+    <Grid>
+        <TextBlock Text="№ разговора" Width="130" Height="30" FontSize="20" HorizontalAlignment="Left" Margin="10,10,0,379"/>
+        <TextBlock  Text="Абонент" Width="130" Height="30" FontSize="20" HorizontalAlignment="Left" Margin="10,45,0,344"/>
+        <TextBlock Text="Телефон абонента" Width="130" Height="30" FontSize="20" HorizontalAlignment="Left" Margin="10,91,0,298"/>
+        <TextBlock  Text="Город" Width="130" Height="30" FontSize="20" HorizontalAlignment="Left" Margin="10,137,0,252"/>
+        <TextBlock  Text="Тариф" Width="130" Height="30" FontSize="20" HorizontalAlignment="Left" Margin="10,183,0,206"/>
+        <TextBlock  Text="Дата разговора" Width="150" Height="30" FontSize="20" HorizontalAlignment="Left" Margin="10,229,0,160"/>
+        <TextBlock Text="Продолжительность(мин)" Width="150" Height="30" FontSize="20" HorizontalAlignment="Left" Margin="10,268,0,121"/>
+        <TextBlock  Text="Стоимость разговора" Width="150" Height="30" FontSize="20" HorizontalAlignment="Left" Margin="10,321,0,68"/>
+
+        <Button x:Name="otmena" Content="Отмена" Width="60" Height="20" VerticalAlignment="Bottom" Margin="476,0,56,10">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5" />
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="Zapisat" Content="Записать" Width="60" Height="20" VerticalAlignment="Bottom" Margin="347,0,185,10">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5" />
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="Back" Content="Назад" Width="60" Height="20" VerticalAlignment="Bottom" Margin="219,0,313,10" Click="Back_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="OnGlForm" Content="На главную форму" Width="120" Height="20" VerticalAlignment="Bottom" Margin="50,0,422,10" Click="OnGlForm_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <TextBox Width="350" Height="30" Margin="170,10,82,379" Text="№" FontSize="20"/>
+        <ComboBox Width="350" Height="30" Margin="170,45,82,344" Text ="Введите фамилию" FontSize="20"/>
+        <ComboBox Width="350" Height="30" Margin="170,91,82,298" Text="Введите имя" FontSize="20"/>
+        <ComboBox Width="350" Height="30" Margin="170,137,82,252" Text="Введите отчество" FontSize="20"/>
+        <TextBox Width="350" Height="30" Margin="170,183,82,206" Text="Тариф выбранного города" FontSize="20"/>
+        <TextBox Width="350" Height="30" Margin="170,321,82,68" Text="Расчет стоимости разговора" FontSize="20"/>
+        <TextBox Width="350" Height="30" Margin="170,275,82,114" Text="Введите длительность разговора" FontSize="20"/>
+        <TextBox Width="350" Height="30" Margin="170,229,82,160" Text="Введите дату" FontSize="20"/>
+    </Grid>
+</Window>

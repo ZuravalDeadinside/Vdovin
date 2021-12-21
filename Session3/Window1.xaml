@@ -1,0 +1,53 @@
+﻿<Window x:Class="Session3.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Session3"
+        mc:Ignorable="d"
+        Title="Абонент" Height="460" Width="610">
+    <Grid>
+        <Button x:Name="otmena" Content="Отмена" Width="60" Height="20" VerticalAlignment="Bottom" Margin="476,0,56,10">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5" />
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="Zapisat" Content="Записать" Width="60" Height="20" VerticalAlignment="Bottom" Margin="347,0,185,10">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5" />
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="Back" Content="Назад" Width="60" Height="20" VerticalAlignment="Bottom" Margin="219,0,313,10">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="OnGlForm" Content="На главную форму" Width="120" Height="20" VerticalAlignment="Bottom" Margin="50,0,422,10" Click="OnGlForm_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        
+        <TextBlock x:Name="Kod" Text="Код абонента" Width="130" Height="30" FontSize="20" HorizontalAlignment="Left" Margin="10,43,0,346"/>
+        <TextBlock x:Name="Fam" Text="Фамилия" Width="130" Height="30" FontSize="20" HorizontalAlignment="Left" Margin="10,99,0,290"/>
+        <TextBlock x:Name="ima" Text="Имя" Width="130" Height="30" FontSize="20" HorizontalAlignment="Left" Margin="10,156,0,233"/>
+        <TextBlock x:Name="otch" Text="Отчество" Width="130" Height="30" FontSize="20" HorizontalAlignment="Left" Margin="10,216,0,173"/>
+        <TextBlock x:Name="Adress" Text="Адрес" Width="130" Height="30" FontSize="20" HorizontalAlignment="Left" Margin="10,273,0,116"/>
+        <TextBlock x:Name="Pas" Text="Паспорт" Width="150" Height="30" FontSize="20" HorizontalAlignment="Left" Margin="10,324,0,65"/>
+
+        <TextBox Name="Ghghg" Width="350" Height="30" Margin="165,42,77,347" Text="№" FontSize="20"/>
+        <TextBox Name="Ghgh" Width="350" Height="30" Margin="165,98,77,291" Text ="Введите фамилию" FontSize="20"/>
+        <TextBox Name="Ghg" Width="350" Height="30" Margin="165,156,77,233" Text="Введите имя" FontSize="20"/>
+        <TextBox Name="Gh" Width="350" Height="30" Margin="165,216,77,173" Text="Введите отчество" FontSize="20"/>
+        <TextBox Name="G" Width="350" Height="30" Margin="165,272,77,117" Text="Введите адрес" FontSize="20"/>
+        <TextBox Name="Go" Width="350" Height="30" Margin="165,324,77,65" Text="Введите паспортные данные" FontSize="20"/>
+    </Grid>
+</Window>
